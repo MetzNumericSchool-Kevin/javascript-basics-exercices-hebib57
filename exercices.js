@@ -101,3 +101,8 @@ console.log(`Nous avons de la: ${potions}`);
 
 potions.push("oasis");
 console.log(`La liste des potions mise à jour est: ${potions}`);
+
+//Finaly, nope.
+
+potions.pop("oasis");
+console.log(`La liste des potions de nouveau mise à jour est: ${potions}`);
