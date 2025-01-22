@@ -25,20 +25,21 @@ console.log("2. Le nom du Sorcier");
 console.log("3. Le prix d'un potion de soin");
 console.log("`4. La quantité d'une potion de soin`");
 
+let nom_sorcier = "Archibald";
 let choix = prompt("Faites un choix entre 1 et 4: ");
 
 switch (parseInt(choix)) {
   case 1:
-    console.log("shop");
+    console.log("Le nom de la boutique est: " + nom_boutique);
     break;
   case 2:
-    console.log("Archibald");
+    console.log("Le nom du sorcier est: " + nom_sorcier);
     break;
   case 3:
-    console.log(prix_potion);
+    console.log("Le prix d'un potion de soin est de: " + prix_potion);
     break;
   case 4:
-    console.log(nb_potions_stock);
+    console.log("Le nombre de potions en stock est de: " + nb_potions_stock);
     break;
   default:
     console.log(
@@ -53,3 +54,31 @@ let prix_total = quantite_potion * prix_potion;
 console.log(
   `Prix de ${quantite_potion} potions de soins : ${prix_total} 🪙 mon cher Aventurier. 💸`
 );
+
+//Bourse de l'Aventurier 💰
+
+let stock_argent = 15;
+console.log("Vérification de la solvabilité de l'aventurier: ");
+if (stock_argent >= prix_total) {
+  console.log(
+    "L'aventurier a assez d'argent pour acheter la quantité demandée"
+  );
+} else {
+  console.log(
+    "L'aventurier n'a pas assez d'argent pour acheter la quantité demandée"
+  );
+}
+
+if (stock_argent - prix_total >= 0 && nb_potions_stock - quantite_potion >= 0) {
+  console.log(
+    "L'aventurier a assez d'argent et le stock est suffisant pour acheter la quantité de potion voulu"
+  );
+  nb_potions_stock = nb_potions_stock - quantite_potion;
+  console.log(`Il reste ${nb_potions_stock} potions en stock`);
+  stock_argent = stock_argent - prix_total;
+  console.log(`Il reste ${stock_argent} $ dans sa bourse`);
+} else {
+  console.log(
+    "L'aventurier n'a pas assez d'argent ou le stock est insuffisant pour acheter la quantité de potion voulu"
+  );
+}
