@@ -29,19 +29,27 @@ let choix = prompt("Faites un choix entre 1 et 4: ");
 
 switch (parseInt(choix)) {
   case 1:
-    console.log(shop);
+    console.log("shop");
     break;
   case 2:
-    console.log(Archibald);
+    console.log("Archibald");
     break;
   case 3:
-    console.log(5);
+    console.log(prix_potion);
     break;
   case 4:
-    console.log(6);
+    console.log(nb_potions_stock);
     break;
   default:
     console.log(
       "`​Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕`"
     );
 }
+
+//Calcul du prix total d'une commande de potion
+
+let quantite_potion = prompt("Entrez une quantité de potion de soin: ");
+let prix_total = quantite_potion * prix_potion;
+console.log(
+  `Prix de ${quantite_potion} potions de soins : ${prix_total} 🪙 mon cher Aventurier. 💸`
+);
