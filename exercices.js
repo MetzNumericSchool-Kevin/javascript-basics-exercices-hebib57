@@ -96,3 +96,8 @@ console.log(`Le nom de la dernière potion est: ${derniere_potion}`);
 
 for (let nb = 0; nb < derniere_potion; nb = nb + 1);
 console.log(`Nous avons de la: ${potions}`);
+
+//Ajout d'une nouvelle potion
+
+potions.push("oasis");
+console.log(`La liste des potions mise à jour est: ${potions}`);
