@@ -121,3 +121,12 @@ console.log(objet);
 console.log("Le nom de la potion est: ", objet.nom);
 
 console.log("Le prix de la potion est de: ", objet["prix"]);
+
+//C'est l'heure de faire l'inventaire...
+
+const inventaire = [
+  { nom: "coca", prix: 5, stock: 12 },
+  { nom: "orangina", prix: 5, stock: 11 },
+  { nom: "sprite", prix: 5, stock: 21 },
+];
+console.log(inventaire);
