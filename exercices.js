@@ -106,3 +106,12 @@ console.log(`La liste des potions mise à jour est: ${potions}`);
 
 potions.pop("oasis");
 console.log(`La liste des potions de nouveau mise à jour est: ${potions}`);
+
+//Rangeons les informations de la potion de soin dans un objet 🧹
+
+const objet = {
+  nom: "Potion de soin",
+  prix: 6,
+  stock: 10,
+};
+console.log(objet);
