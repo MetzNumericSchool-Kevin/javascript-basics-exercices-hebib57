@@ -87,3 +87,12 @@ if (stock_argent - prix_total >= 0 && nb_potions_stock - quantite_potion >= 0) {
 
 let potions = ["coca", "orangina", "sprite"];
 console.log(potions);
+
+//Affichage des potions
+
+console.log(`Le nom de la première potion est: ${potions[0]}`);
+let derniere_potion = potions[potions.length - 1];
+console.log(`Le nom de la dernière potion est: ${derniere_potion}`);
+
+for (let nb = 0; nb < derniere_potion; nb = nb + 1);
+console.log(`Nous avons de la: ${potions}`);
