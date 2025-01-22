@@ -115,3 +115,9 @@ const objet = {
   stock: 10,
 };
 console.log(objet);
+
+//Affichons les informations de la potion
+
+console.log("Le nom de la potion est: ", objet.nom);
+
+console.log("Le prix de la potion est de: ", objet["prix"]);
