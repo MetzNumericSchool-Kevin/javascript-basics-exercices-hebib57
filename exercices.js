@@ -82,3 +82,8 @@ if (stock_argent - prix_total >= 0 && nb_potions_stock - quantite_potion >= 0) {
     "L'aventurier n'a pas assez d'argent ou le stock est insuffisant pour acheter la quantité de potion voulu"
   );
 }
+
+//Liste des potions
+
+let potions = ["coca", "orangina", "sprite"];
+console.log(potions);
